@@ -71,7 +71,7 @@ tools/triage/         Dump triage: inventory a game folder (Python)
 tools/coverage/       Coverage database: static imports + runtime traces across games (Python)
 tools/xgameruntime/   Extracts the XGameRuntime API table from Microsoft's public PC GDK (Python)
 src/common/           Native trace logger used by every replacement library (C++20)
-src/shims/xgameruntime/  Replacement xgameruntime.dll (all 396 public APIs routed, logged)
+src/shims/xgameruntime/  Replacement xgameruntime.dll (all 396 public APIs routed; XAsync/XTaskQueue implemented)
 src/launcher/         gtx-launch: starts a game with GTX's replacement DLLs preloaded
 tests/                Native tests (CTest)
 ```
@@ -86,8 +86,15 @@ that contract:
 - The dispatch table (396 APIs across 34 interfaces) is **generated** from Microsoft's public PC
   GDK by `tools/xgameruntime/extract_api_table.py`, so it tracks new GDK releases.
 - Every API starts out as a stub that logs its first call and returns a safe failure. Real
-  implementations replace stubs one at a time (`impl.cpp`).
-- Tested end to end: a test program links Microsoft's real `xgameruntime.lib`, and its calls arrive in GTX's DLL.
+  implementations replace stubs one at a time (`impl.cpp`, `xtask.cpp`).
+- Implemented so far: the full **XAsync + XTaskQueue** async framework that most GDK APIs are
+  built on (`xtask.cpp`), plus system and identity basics (`XSystemGetAnalyticsInfo`,
+  `XSystemGetConsoleId`, `XSystemGetXboxLiveSandboxId`, `XGameGetXboxTitleId`, `XThread*`).
+- Tested end to end: test programs link Microsoft's real `xgameruntime.lib`, and their calls arrive in GTX's DLL.
+- **Checked against the real thing:** the same test suite also runs against Microsoft's installed
+  runtime, and GTX must behave identically. This is how details like termination order,
+  cancellation and result-consumption rules were pinned down.
+- Microsoft's `SimpleTriangleDesktop` sample runs on GTX's runtime with no unimplemented calls.
 
 ### `gtx-launch`: run something on GTX
 

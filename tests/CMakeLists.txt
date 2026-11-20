@@ -26,6 +26,20 @@ if(GTX_GDK_WINDOWS_DIR AND EXISTS "${GTX_GDK_WINDOWS_DIR}/lib/x64/xgameruntime.l
   add_dependencies(xgameruntime_gdk_probe gtx_xgameruntime gtx_launch)
   add_test(NAME gtx_launch_injects_shim
            COMMAND gtx_launch --wait-ms 30000 $<TARGET_FILE:xgameruntime_gdk_probe>)
+
+  function(gtx_gdk_test name src)
+    add_executable(${name} ${src})
+    target_include_directories(${name} PRIVATE "${GTX_GDK_WINDOWS_DIR}/include")
+    target_link_libraries(${name} PRIVATE "${GTX_GDK_WINDOWS_DIR}/lib/x64/xgameruntime.lib" advapi32)
+    add_dependencies(${name} gtx_xgameruntime)
+  endfunction()
+
+  gtx_gdk_test(xtask_gdk_test xtask_gdk_test.cpp)
+  add_test(NAME xtask_gdk_test COMMAND xtask_gdk_test)
+  # Same assertions against Microsoft's installed runtime (skips itself if absent).
+  gtx_gdk_test(xtask_gdk_reference xtask_gdk_test.cpp)
+  target_compile_definitions(xtask_gdk_reference PRIVATE GTX_REFERENCE_RUNTIME)
+  add_test(NAME xtask_gdk_reference COMMAND xtask_gdk_reference)
 else()
-  message(STATUS "GTX_GDK_WINDOWS_DIR not set: skipping xgameruntime_gdk_e2e")
+  message(STATUS "GTX_GDK_WINDOWS_DIR not set: skipping GDK tests")
 endif()
