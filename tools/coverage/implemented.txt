@@ -1,0 +1,3 @@
+# Functions our shims implement. One per line: <dll>!<function>, globs allowed.
+# Example:  kernelx.dll!CreateFileW     xgameruntime.dll!XGame*
+# Keep sorted by DLL. Coverage tool (T-005) marks matches as "implemented".

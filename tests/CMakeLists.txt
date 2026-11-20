@@ -1,0 +1,3 @@
+add_executable(gtx_common_test common_test.cpp)
+target_link_libraries(gtx_common_test PRIVATE gtx_common)
+add_test(NAME gtx_common_test COMMAND gtx_common_test)

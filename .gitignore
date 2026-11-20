@@ -1,0 +1,67 @@
+# Never commit game content, console binaries, or keys
+dumps/
+games/
+*.xvc
+*.msixvc
+*.xvd
+*.xex
+*.key
+*.cik
+EmbeddedXvd/
+MicrosoftGame.config
+AppxManifest.xml
+*.appx
+*.msix
+*.msixbundle
+
+# Internal project docs and all Markdown (kept local, not published)
+docs/
+*.md
+*.markdown
+
+# Secrets / credentials / personal config
+.env
+.env.*
+*.pem
+*.pfx
+*.p12
+*.snk
+*.cer
+*.crt
+*.token
+secrets/
+credentials*
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/*.local.*
+
+# Third-party SDKs and reference checkouts (see docs/TOOLS.md; never vendor)
+gtx-ref/
+*.nupkg
+packages/
+vcpkg_installed/
+
+# Build output
+build/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.lib
+*.obj
+*.ilk
+*.exp
+
+# Local tooling / logs / runtime traces
+*.log
+reports/
+shader-cache/
+.vs/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
