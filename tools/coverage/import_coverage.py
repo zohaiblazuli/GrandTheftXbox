@@ -11,8 +11,15 @@ Each import is classified:
   apiset     api-ms-* / ext-ms-* contract; resolved by host loader (export not checked)
   xbox_only  DLL does not exist on host -> needs a shim DLL
   implemented  listed in implemented.txt (overrides the above)
+  runtime_stub    seen only at runtime: a GTX shim hit its logging stub (T-013)
+  runtime_unimpl  seen only at runtime: a GTX shim got a call it cannot even identify
 
-Usage: python tools/coverage/import_coverage.py reports/*/triage.json [-o reports/_coverage]
+Runtime traces (GTX_LOG files written by src/common, tab-separated
+`KIND<TAB>dll<TAB>function<TAB>caller<TAB>message`) add what the game actually called. Rows hit
+at runtime rank first: they are the calls that block the game right now.
+
+Usage: python tools/coverage/import_coverage.py reports/*/triage.json
+           [--trace GAME=path/to/gtx.log ...] [-o reports/_coverage]
 """
 from __future__ import annotations
 
@@ -34,7 +41,25 @@ except ImportError:  # pragma: no cover
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_IMPLEMENTED = Path(__file__).with_name("implemented.txt")
 HOST_DIR = Path(os.environ.get("SystemRoot", r"C:\Windows")) / "System32"
-NEEDS_WORK = ("xbox_only", "host_miss")
+NEEDS_WORK = ("runtime_unimpl", "runtime_stub", "xbox_only", "host_miss")
+CLASSES = ("runtime_unimpl", "runtime_stub", "xbox_only", "host_miss", "implemented", "host",
+           "apiset", "bundled")
+TRACE_KINDS = {"STUB", "UNIMPL"}
+
+
+def parse_trace(text: str) -> list[tuple[str, str, str]]:
+    """GTX_LOG text -> unique [(kind, dll, function)] for STUB/UNIMPL records."""
+    out = []
+    seen = set()
+    for line in text.splitlines():
+        parts = line.split("\t")
+        if len(parts) < 3 or parts[0] not in TRACE_KINDS:
+            continue
+        rec = (parts[0], parts[1].lower(), parts[2])
+        if rec not in seen:
+            seen.add(rec)
+            out.append(rec)
+    return out
 
 
 @lru_cache(maxsize=None)
@@ -90,11 +115,13 @@ def classify(dll: str, fn: str, bundled: set[str], host_dir: str, pats) -> str:
 
 
 def aggregate(reports: list[dict], host_dir: Path = HOST_DIR,
-              implemented: list | None = None) -> dict:
+              implemented: list | None = None,
+              traces: dict[str, list[tuple[str, str, str]]] | None = None) -> dict:
     pats = implemented or []
     games = []
-    # (dll, fn) -> {"games": set, "pe_count": int}
-    funcs: dict = collections.defaultdict(lambda: {"games": set(), "pe_count": 0})
+    # (dll, fn) -> {"games": set, "pe_count": int, "runtime": set(kinds), "runtime_games": set}
+    funcs: dict = collections.defaultdict(
+        lambda: {"games": set(), "pe_count": 0, "runtime": set(), "runtime_games": set()})
     bundled_by_game = {}
     for r in reports:
         game = r.get("root_name", "?")
@@ -109,16 +136,32 @@ def aggregate(reports: list[dict], host_dir: Path = HOST_DIR,
                         rec["games"].add(game)
                         rec["pe_count"] += 1
 
+    for game, records in (traces or {}).items():
+        if game not in games:
+            games.append(game)
+            bundled_by_game.setdefault(game, set())
+        for kind, dll, fn in records:
+            rec = funcs[(dll, fn)]
+            rec["games"].add(game)
+            rec["runtime"].add(kind)
+            rec["runtime_games"].add(game)
+
     rows = []
     for (dll, fn), rec in funcs.items():
-        # bundled only if bundled in every game that imports it
-        bundled_everywhere = all(dll in bundled_by_game[g] for g in rec["games"])
-        cls = classify(dll, fn, {dll} if bundled_everywhere else set(), str(host_dir), pats)
+        if rec["pe_count"] == 0:  # only known from a runtime trace
+            cls = "implemented" if is_implemented(dll, fn, pats) else (
+                "runtime_unimpl" if "UNIMPL" in rec["runtime"] else "runtime_stub")
+        else:
+            # bundled only if bundled in every game that imports it
+            bundled_everywhere = all(dll in bundled_by_game[g] for g in rec["games"])
+            cls = classify(dll, fn, {dll} if bundled_everywhere else set(), str(host_dir), pats)
         rows.append({"dll": dll, "function": fn, "class": cls,
                      "games": len(rec["games"]), "pe_count": rec["pe_count"],
+                     "runtime": sorted(rec["runtime"]),
+                     "runtime_games": len(rec["runtime_games"]),
                      "game_names": sorted(rec["games"])})
-    rows.sort(key=lambda x: (x["class"] not in NEEDS_WORK, -x["games"], -x["pe_count"],
-                             x["dll"], x["function"]))
+    rows.sort(key=lambda x: (x["class"] not in NEEDS_WORK, -x["runtime_games"], -x["games"],
+                             -x["pe_count"], x["dll"], x["function"]))
 
     dlls: dict = {}
     for row in rows:
@@ -142,41 +185,56 @@ def render(cov: dict, top: int = 200) -> str:
     lines = ["# Import coverage", "",
              f"Games: {len(cov['games'])} ({', '.join(cov['games'])})", "",
              "| Class | Functions | % |", "|---|---|---|"]
-    for k in ("xbox_only", "host_miss", "implemented", "host", "apiset", "bundled"):
+    for k in CLASSES:
         lines.append(f"| {k} | {t.get(k, 0)} | {100 * t.get(k, 0) / total:.1f} |")
     lines += ["", "## DLLs (most shim work first)", "",
-              "| DLL | Games | Functions | xbox_only | host_miss | implemented | host | apiset | bundled |",
-              "|---|---|---|---|---|---|---|---|---|"]
+              "| DLL | Games | Functions | " + " | ".join(CLASSES) + " |",
+              "|---|---|---|" + "---|" * len(CLASSES)]
     for d in cov["dlls"]:
         c = d["classes"]
         lines.append(f"| {d['dll']} | {d['games']} | {d['functions']} | " + " | ".join(
-            str(c.get(k, 0)) for k in
-            ("xbox_only", "host_miss", "implemented", "host", "apiset", "bundled")) + " |")
+            str(c.get(k, 0)) for k in CLASSES) + " |")
     todo = [r for r in cov["functions"] if r["class"] in NEEDS_WORK]
     lines += ["", f"## Top {min(top, len(todo))} unimplemented functions (of {len(todo)})", "",
-              "| # | DLL | Function | Class | Games | PEs |", "|---|---|---|---|---|---|"]
+              "Runtime = hit while running under GTX (from `--trace`); those block a game now.", "",
+              "| # | DLL | Function | Class | Runtime | Games | PEs |",
+              "|---|---|---|---|---|---|---|"]
     for i, r in enumerate(todo[:top], 1):
-        lines.append(f"| {i} | {r['dll']} | `{r['function']}` | {r['class']} | "
+        rt = ",".join(r.get("runtime", [])) or "-"
+        lines.append(f"| {i} | {r['dll']} | `{r['function']}` | {r['class']} | {rt} | "
                      f"{r['games']} | {r['pe_count']} |")
     return "\n".join(lines) + "\n"
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("reports", nargs="+", help="triage.json files or globs")
+    ap.add_argument("reports", nargs="*", help="triage.json files or globs")
+    ap.add_argument("--trace", action="append", default=[], metavar="GAME=LOG",
+                    help="GTX_LOG runtime trace for GAME (repeatable); GAME should match the "
+                         "triage --name so rows merge")
     ap.add_argument("-o", "--out", type=Path, default=REPO / "reports" / "_coverage")
     ap.add_argument("--implemented", type=Path, default=DEFAULT_IMPLEMENTED)
     ap.add_argument("--host-dir", type=Path, default=HOST_DIR)
     ap.add_argument("--top", type=int, default=200)
     args = ap.parse_args(argv)
+    if not args.reports and not args.trace:
+        ap.error("give triage reports and/or --trace GAME=LOG")
 
     paths = sorted({p for pat in args.reports for p in (glob.glob(pat) or [pat])})
     reports = [json.loads(Path(p).read_text(encoding="utf-8")) for p in paths]
-    cov = aggregate(reports, args.host_dir, load_implemented(args.implemented))
+    traces: dict[str, list] = {}
+    for spec in args.trace:
+        game, sep, log = spec.partition("=")
+        if not sep:
+            ap.error(f"--trace needs GAME=LOG, got {spec!r}")
+        traces.setdefault(game, []).extend(
+            parse_trace(Path(log).read_text(encoding="utf-8", errors="replace")))
+    cov = aggregate(reports, args.host_dir, load_implemented(args.implemented), traces)
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "coverage.json").write_text(json.dumps(cov, indent=1), encoding="utf-8")
     (args.out / "coverage.md").write_text(render(cov, args.top), encoding="utf-8")
-    print(f"{len(reports)} reports, {len(cov['functions'])} functions: {cov['totals']} -> {args.out}")
+    print(f"{len(reports)} reports, {len(traces)} traces, {len(cov['functions'])} functions: "
+          f"{cov['totals']} -> {args.out}")
     return 0
 
 

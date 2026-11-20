@@ -80,6 +80,46 @@ class CoverageTests(unittest.TestCase):
             data = json.loads((out / "coverage.json").read_text(encoding="utf-8"))
             self.assertEqual(data["totals"]["implemented"], 1)
 
+    TRACE = ("INFO\txgameruntime.dll\tInitializeApiImplEx2\t0000\ta=1\n"
+             "STUB\txgameruntime.dll\tXAsyncRun\t0000\t\n"
+             "STUB\txgameruntime.dll\tXAsyncRun\t0000\t\n"
+             "UNIMPL\txgameruntime.dll\tQueryApiImpl\t0000\tunknown interface {X}\n"
+             "STUB\tkernelx.dll\tXMemFree\t0000\t\n"
+             "garbage line\n")
+
+    def test_parse_trace(self):
+        self.assertEqual(coverage.parse_trace(self.TRACE), [
+            ("STUB", "xgameruntime.dll", "XAsyncRun"),
+            ("UNIMPL", "xgameruntime.dll", "QueryApiImpl"),
+            ("STUB", "kernelx.dll", "XMemFree")])
+
+    def test_trace_merges_and_ranks_first(self):
+        cov = coverage.aggregate([GAME_A, GAME_B],
+                                 traces={"GameB": coverage.parse_trace(self.TRACE)})
+        by = {(r["dll"], r["function"]): r for r in cov["functions"]}
+        self.assertEqual(by[("xgameruntime.dll", "XAsyncRun")]["class"], "runtime_stub")
+        self.assertEqual(by[("xgameruntime.dll", "QueryApiImpl")]["class"], "runtime_unimpl")
+        # Static import also seen at runtime keeps its class but gains the runtime mark.
+        free = by[("kernelx.dll", "XMemFree")]
+        self.assertEqual(free["class"], "xbox_only")
+        self.assertEqual(free["runtime"], ["STUB"])
+        self.assertEqual(free["games"], 1)
+        # Every runtime-hit row outranks every static-only needs-work row.
+        work = [r for r in cov["functions"] if r["class"] in coverage.NEEDS_WORK]
+        hit = [bool(r["runtime_games"]) for r in work]
+        self.assertEqual(hit, sorted(hit, reverse=True))
+        self.assertEqual(cov["games"], ["GameA", "GameB"])
+
+    def test_cli_trace_only(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            log = d / "gtx.log"
+            log.write_text(self.TRACE, encoding="utf-8")
+            out = d / "out"
+            self.assertEqual(coverage.main(["--trace", f"Sample={log}", "-o", str(out)]), 0)
+            md = (out / "coverage.md").read_text(encoding="utf-8")
+            self.assertIn("`XAsyncRun` | runtime_stub | STUB", md)
+
 
 if __name__ == "__main__":
     unittest.main()

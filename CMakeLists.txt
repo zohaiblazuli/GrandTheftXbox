@@ -16,6 +16,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_subdirectory(src/common)
+add_subdirectory(src/shims/xgameruntime)
+add_subdirectory(src/launcher)
 
 enable_testing()
 add_subdirectory(tests)

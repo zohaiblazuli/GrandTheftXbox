@@ -6,8 +6,9 @@
 ![Status: early development](https://img.shields.io/badge/status-early%20development-orange)
 ![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-lightgrey)
 
-> **Status:** Milestone 0 (foundations). No game runs yet. What exists today is the analysis
-> tooling that maps what a game needs, plus the native code skeleton the system libraries will be built on.
+> **Status:** early development, between Milestones 0 and 1. No console game runs yet. What works today:
+> analysis tooling that maps what a game needs, a launcher, and a replacement `xgameruntime.dll`
+> that Microsoft's own GDK runtime library loads and talks to. A GDK sample program runs on it.
 
 ---
 
@@ -27,7 +28,7 @@ The game's CPU code already runs on any modern x86-64 processor, so GTX doesn't 
 recompile it. It replaces only the parts that are specific to the console:
 
 - **System libraries** that exist only on Xbox (kernel, WinRT and GDK runtime APIs).
-- **Graphics**: D3D12.X calls are translated to PC D3D12, with Vulkan planned later.
+- **Graphics**: D3D12.X calls are translated to PC D3D12.
 - **GPU shaders**: the console's precompiled shaders are recompiled for PC GPUs and cached.
 - **Storage**: DirectStorage and Xbox-specific decompression (zlib, BCPack).
 - **Audio, input and services**: XAudio2, controllers, and local stand-ins for online services.
@@ -57,21 +58,46 @@ Design principles:
 
 | Milestone | Goal | State |
 |---|---|---|
-| **M0** | Foundations: analysis tooling, toolchain, project layout | 🟡 in progress |
-| **M1** | Loader + first pixels: a GDK sample runs on GTX's replacement libraries and clears the screen with PC D3D12 | ⚪ |
+| **M0** | Foundations: analysis tooling, toolchain, project layout | 🟡 waiting on the first real game dump |
+| **M1** | Loader + first pixels: a GDK sample runs on GTX's replacement libraries and clears the screen with PC D3D12 | 🟡 started (launcher + `xgameruntime` shim) |
 | **M2** | A 2D indie game reaches gameplay with input and audio | ⚪ |
 | **M3** | A 3D Xbox One-era game is playable, with shader translation working | ⚪ |
 | **M4** | A game built specifically for Series X\|S boots (Series-only graphics path, BCPack decoding) | ⚪ |
-| **M5** | Linux support through Vulkan | ⚪ |
 
 ## What's in the repo today
 
 ```
-tools/triage/     Dump triage: inventory a game folder (Python)
-tools/coverage/   Import coverage database across games (Python)
-src/common/       Native trace logger used by every replacement library (C++20)
-tests/            Native tests (CTest)
+tools/triage/         Dump triage: inventory a game folder (Python)
+tools/coverage/       Coverage database: static imports + runtime traces across games (Python)
+tools/xgameruntime/   Extracts the XGameRuntime API table from Microsoft's public PC GDK (Python)
+src/common/           Native trace logger used by every replacement library (C++20)
+src/shims/xgameruntime/  Replacement xgameruntime.dll (all 396 public APIs routed, logged)
+src/launcher/         gtx-launch: starts a game with GTX's replacement DLLs preloaded
+tests/                Native tests (CTest)
 ```
+
+### `src/shims/xgameruntime`: the GDK runtime, replaced
+
+Games built with Microsoft's GDK link a small static library that loads `xgameruntime.dll` and
+reaches every API (`XUserGetId`, `XGameSave…`, `XSystem…`) through `QueryApiImpl`, which returns
+interfaces identified by GUID, plus a vtable slot per function. GTX's replacement DLL implements
+that contract:
+
+- The dispatch table (396 APIs across 34 interfaces) is **generated** from Microsoft's public PC
+  GDK by `tools/xgameruntime/extract_api_table.py`, so it tracks new GDK releases.
+- Every API starts out as a stub that logs its first call and returns a safe failure. Real
+  implementations replace stubs one at a time (`impl.cpp`).
+- Tested end to end: a test program links Microsoft's real `xgameruntime.lib`, and its calls arrive in GTX's DLL.
+
+### `gtx-launch`: run something on GTX
+
+```bash
+gtx-launch [--shims <dir>] [--wait-ms N] <game.exe> [args...]
+```
+
+Starts the program suspended, loads GTX's replacement DLLs into it, then lets it run. The
+Windows loader reuses an already-loaded DLL of the same name, so the game ends up talking to
+GTX instead of the system copy. Set `GTX_LOG=<file>` to record every call that hits a stub.
 
 ### `tools/triage`: what does this game need?
 
@@ -97,8 +123,11 @@ Combines triage reports from several games and sorts every imported function int
 | `apiset` | An `api-ms-*` / `ext-ms-*` API set that Windows resolves itself |
 | `bundled` | Provided by a DLL that ships with the game |
 | `implemented` | Already listed in `tools/coverage/implemented.txt` |
+| `runtime_stub` | Not in any import table, but a GTX replacement hit its stub while the game ran |
+| `runtime_unimpl` | A call GTX couldn't even identify at runtime, such as an unknown interface |
 
-Functions that still need work are ranked by how many games use them.
+Add runtime traces with `--trace GAME=gtx.log`. Functions a game actually called while running
+rank first, followed by the rest ranked by how many games use them.
 
 ## Getting started
 
@@ -127,6 +156,21 @@ cmake --build --preset debug
 ctest --preset debug
 ```
 
+Optional: point CMake at the public PC GDK to also build the end-to-end tests, which link
+Microsoft's real `xgameruntime.lib`. The GDK is the `Microsoft.GDK.Windows` NuGet package; unzip the `.nupkg` anywhere.
+
+```bash
+cmake --preset vs2026-x64 -DGTX_GDK_WINDOWS_DIR=<unzipped>/native/261000/windows
+```
+
+### Run something under GTX
+
+```bat
+set GTX_LOG=%TEMP%\gtx.log
+build\vs2026-x64\bin\Debug\gtx-launch.exe path\to\Program.exe
+python tools/coverage/import_coverage.py --trace Program=%TEMP%\gtx.log
+```
+
 ### Run the tests
 
 ```bash
@@ -149,7 +193,7 @@ names are trademarks of Microsoft Corporation.
 - **[WinDurango](https://github.com/WinDurango/WinDurango)** showed that the shim-DLL approach works
   for Xbox One-era games. GTX is MIT-licensed and does **not** include WinDurango's (LGPL-3.0) code;
   we study its approach and write our own implementation.
-- **Wine / Proton / vkd3d-proton**: the model for API translation on a different host.
+- **Wine / Proton**: the model for translating one platform's APIs onto another.
 - Microsoft's public [PC GDK](https://www.nuget.org/packages/Microsoft.GDK.Windows) and
   [Xbox-GDK-Samples](https://github.com/microsoft/Xbox-GDK-Samples): public API definitions and test programs.
 

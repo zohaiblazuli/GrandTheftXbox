@@ -1,0 +1,3710 @@
+{
+ "source": "Microsoft.GDK.Windows xgameruntime.lib (public NuGet)",
+ "gdk_dir": "261000/windows",
+ "api_count": 396,
+ "interface_count": 34,
+ "interfaces": [
+  {
+   "guid": "014D1CC3-BCFE-41FF-B2F0-E1EF07155828",
+   "max_slot": 7
+  },
+  {
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "max_slot": 36
+  },
+  {
+   "guid": "026B010C-06C3-4CDD-BBCB-43F229DB1CFF",
+   "max_slot": 4
+  },
+  {
+   "guid": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "max_slot": 4
+  },
+  {
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "max_slot": 30
+  },
+  {
+   "guid": "079415E3-6727-437F-8E9D-8F8F9B2439F7",
+   "max_slot": 42
+  },
+  {
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "max_slot": 41
+  },
+  {
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "max_slot": 10
+  },
+  {
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "max_slot": 8
+  },
+  {
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "max_slot": 18
+  },
+  {
+   "guid": "1B339674-328D-4283-A200-3171F18D3639",
+   "max_slot": 5
+  },
+  {
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "max_slot": 32
+  },
+  {
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "max_slot": 17
+  },
+  {
+   "guid": "2549F142-6419-4A06-97B5-931AAB7C2F34",
+   "max_slot": 5
+  },
+  {
+   "guid": "26F3C674-A2FE-44FA-B6C4-A323BC94FF53",
+   "max_slot": 46
+  },
+  {
+   "guid": "2D42FEA5-E71D-4B76-97CD-C50AFBB3AE5D",
+   "max_slot": 72
+  },
+  {
+   "guid": "2E4F76FE-0FC7-461E-AB4D-A4499434C3CF",
+   "max_slot": 5
+  },
+  {
+   "guid": "35F07670-706E-4BFB-9476-090798C5EBF3",
+   "max_slot": 4
+  },
+  {
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "max_slot": 8
+  },
+  {
+   "guid": "5131D685-4394-4EE6-8C18-BFB5D4AEF1FF",
+   "max_slot": 49
+  },
+  {
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "max_slot": 34
+  },
+  {
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "max_slot": 81
+  },
+  {
+   "guid": "60B09F4E-1B85-45B1-826C-169118E230E1",
+   "max_slot": 70
+  },
+  {
+   "guid": "8836FE87-EDB9-4FE3-8DAD-05F0D2CD5B40",
+   "max_slot": 3
+  },
+  {
+   "guid": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "max_slot": 5
+  },
+  {
+   "guid": "AEBDFE78-4394-49FF-BA3A-001956457044",
+   "max_slot": 6
+  },
+  {
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "max_slot": 83
+  },
+  {
+   "guid": "B884675D-B738-4A9C-815D-9A9A1E0C6C9B",
+   "max_slot": 3
+  },
+  {
+   "guid": "BBFBDCC7-BFE7-409B-A5CA-EDF054960B4D",
+   "max_slot": 3
+  },
+  {
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "max_slot": 20
+  },
+  {
+   "guid": "CEF4FAC0-7676-4A94-A119-4C43F9EB5B74",
+   "max_slot": 3
+  },
+  {
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "max_slot": 21
+  },
+  {
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "max_slot": 50
+  },
+  {
+   "guid": "EB9BF948-18DC-4D82-BBCC-40E0A809C4C0",
+   "max_slot": 38
+  }
+ ],
+ "apis": [
+  {
+   "name": "XAppBroadcastGetStatus",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _Out_ XAppBroadcastStatus* appBroadcastStatus",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppBroadcastIsAppBroadcasting",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 3,
+   "ret": "bool",
+   "params": "",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppBroadcastRegisterIsAppBroadcastingChanged",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XAppBroadcastMonitorCallback* appBroadcastMonitorCallback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppBroadcastShowUI",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppBroadcastUnregisterIsAppBroadcastingChanged",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 7,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureCancelUserRecord",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_In_ const char* localId",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureCloseLocalStream",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XAppCaptureLocalStreamHandle handle",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureCloseScreenshotStream",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_ XAppCaptureScreenshotStreamHandle handle",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureDisableRecord",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureEnableRecord",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureGetVideoCaptureSettings",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_Out_ XAppCaptureVideoCaptureSettings* userCaptureSettings",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataAddDoubleEvent",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_ double value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataAddInt32Event",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_ int32_t value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataAddStringEvent",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_z_ const char* value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataRemainingStorageBytesAvailable",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_Out_ uint64_t* value",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataStartDoubleState",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_ double value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataStartInt32State",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_ int32_t value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataStartStringState",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name, _In_z_ const char* value, _In_ XAppCaptureMetadataPriority priority",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataStopAllStates",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureMetadataStopState",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* name",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureOpenScreenshotStream",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ const char* localId, _In_ XAppCaptureScreenshotFormatFlag screenshotFormat, _Out_ XAppCaptureScreenshotStreamHandle* handle, _Out_opt_ uint64_t* totalBytes",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureReadLocalStream",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XAppCaptureLocalStreamHandle handle, _In_ size_t startPosition, _In_ uint32_t bytesToRead, _Out_writes_to_(bytesToRead, *bytesWritten) uint8_t* buffer, _Out_ uint32_t* bytesWritten",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureReadScreenshotStream",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_ XAppCaptureScreenshotStreamHandle handle, _In_ uint64_t startPosition, _In_ uint32_t bytesToRead, _Out_writes_to_(bytesToRead, *bytesWritten) uint8_t* buffer, _Out_ uint32_t* bytesWritten",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureRecordDiagnosticClip",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ time_t startTime, _In_ uint32_t durationInMs, _In_opt_ const char* filenamePrefix, _Out_ XAppCaptureRecordClipResult* result",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureRecordTimespan",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_opt_ const SYSTEMTIME* startTimestamp, _In_ uint64_t durationInMilliseconds, _Out_ XAppCaptureLocalResult* result",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureRegisterMetadataPurged",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_ void* context, _In_ XAppCaptureMetadataPurgedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureStartUserRecord",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _In_ uint32_t localIdBufferLength, _Out_writes_z_(localIdBufferLength) char* localIdBuffer",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureStopUserRecord",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ const char* localId, _Out_ XAppCaptureUserRecordingResult* result",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureTakeDiagnosticScreenshot",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ bool gamescreenOnly, _In_ XAppCaptureScreenshotFormatFlag captureFlags, _In_opt_ const char* filenamePrefix, _Out_ XAppCaptureDiagnosticScreenshotResult* result",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureTakeScreenshot",
+   "guid": "22E672D7-B4E3-406C-BD50-8F0D25236F9E",
+   "provider": "A4F1AEE2-4BF1-4485-B008-A7C26D52AC27",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _Out_ XAppCaptureTakeScreenshotResult* result",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAppCaptureUnRegisterMetadataPurged",
+   "guid": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "provider": "186D5592-A72D-45FB-9560-11AED0E6647A",
+   "slot": 18,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XAppCapture.h"
+  },
+  {
+   "name": "XAsyncBegin",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_opt_ void* context, _In_opt_ const void* identity, _In_opt_ const char* identityName, _In_ XAsyncProvider* provider",
+   "header": "XAsyncProvider.h"
+  },
+  {
+   "name": "XAsyncCancel",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 5,
+   "ret": "void",
+   "params": "_Inout_ XAsyncBlock* asyncBlock",
+   "header": "XAsync.h"
+  },
+  {
+   "name": "XAsyncComplete",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 10,
+   "ret": "void",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ HRESULT result, _In_ size_t requiredBufferSize",
+   "header": "XAsyncProvider.h"
+  },
+  {
+   "name": "XAsyncGetResult",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_opt_ const void* identity, _In_ size_t bufferSize, _Out_writes_bytes_to_opt_(bufferSize, *bufferUsed) void* buffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XAsyncProvider.h"
+  },
+  {
+   "name": "XAsyncGetResultSize",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _Out_ size_t* bufferSize",
+   "header": "XAsync.h"
+  },
+  {
+   "name": "XAsyncGetStatus",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ bool wait",
+   "header": "XAsync.h"
+  },
+  {
+   "name": "XAsyncRun",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ XAsyncWork* work",
+   "header": "XAsync.h"
+  },
+  {
+   "name": "XAsyncSchedule",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ uint32_t delayInMs",
+   "header": "XAsyncProvider.h"
+  },
+  {
+   "name": "XClosedCaptionGetProperties",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_Out_ XClosedCaptionProperties* properties",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XClosedCaptionSetEnabled",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ bool enabled",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XDisplayAcquireTimeoutDeferral",
+   "guid": "1B339674-328D-4283-A200-3171F18D3639",
+   "provider": "1B339674-328D-4283-A200-3171F18D3639",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_Out_ XDisplayTimeoutDeferralHandle* handle",
+   "header": "XDisplay.h"
+  },
+  {
+   "name": "XDisplayCloseTimeoutDeferralHandle",
+   "guid": "1B339674-328D-4283-A200-3171F18D3639",
+   "provider": "1B339674-328D-4283-A200-3171F18D3639",
+   "slot": 5,
+   "ret": "void",
+   "params": "_In_ XDisplayTimeoutDeferralHandle handle",
+   "header": "XDisplay.h"
+  },
+  {
+   "name": "XDisplayTryEnableHdrMode",
+   "guid": "35F07670-706E-4BFB-9476-090798C5EBF3",
+   "provider": "03F0FE74-FDD9-4E5C-B630-F9339C47ACC5",
+   "slot": 4,
+   "ret": "XDisplayHdrModeResult",
+   "params": "_In_ XDisplayHdrModePreference displayModePreference, _Out_opt_ XDisplayHdrModeInfo* displayHdrModeInfo",
+   "header": "XDisplay.h"
+  },
+  {
+   "name": "XErrorReport",
+   "guid": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "provider": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XErrorSetCallback",
+   "guid": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "provider": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "slot": 4,
+   "ret": "void",
+   "params": "_In_opt_ XErrorCallback* callback, _In_opt_ void* context",
+   "header": "XError.h"
+  },
+  {
+   "name": "XErrorSetOptions",
+   "guid": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "provider": "8CA467F7-22E8-4096-8456-BB8AA13F79D8",
+   "slot": 5,
+   "ret": "void",
+   "params": "_In_ XErrorOptions optionsDebuggerPresent, _In_ XErrorOptions optionsDebuggerNotPresent",
+   "header": "XError.h"
+  },
+  {
+   "name": "XGameActivationAcceptPendingInvite",
+   "guid": "2E4F76FE-0FC7-461E-AB4D-A4499434C3CF",
+   "provider": "7F0FE8B8-E075-49AB-9AA7-A1E065489A9E",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* inviteUri",
+   "header": "XGameActivation.h"
+  },
+  {
+   "name": "XGameActivationRegisterForEvent",
+   "guid": "2E4F76FE-0FC7-461E-AB4D-A4499434C3CF",
+   "provider": "7F0FE8B8-E075-49AB-9AA7-A1E065489A9E",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XGameActivationCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XGameActivation.h"
+  },
+  {
+   "name": "XGameActivationUnregisterForEvent",
+   "guid": "2E4F76FE-0FC7-461E-AB4D-A4499434C3CF",
+   "provider": "7F0FE8B8-E075-49AB-9AA7-A1E065489A9E",
+   "slot": 4,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XGameActivation.h"
+  },
+  {
+   "name": "XGameEventWrite",
+   "guid": "BBFBDCC7-BFE7-409B-A5CA-EDF054960B4D",
+   "provider": "BBFBDCC7-BFE7-409B-A5CA-EDF054960B4D",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_z_ const char *serviceConfigId, _In_z_ const char *playSessionId, _In_z_ const char* eventName, _In_opt_z_ const char* dimensionsJson, _In_opt_z_ const char* measurementsJson",
+   "header": "XGameEvent.h"
+  },
+  {
+   "name": "XGameGetXboxTitleId",
+   "guid": "2549F142-6419-4A06-97B5-931AAB7C2F34",
+   "provider": "973A344E-24BF-4D0F-8457-56C534892B29",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_Out_ uint32_t* titleId",
+   "header": "XGame.h"
+  },
+  {
+   "name": "XGameInviteAcceptPendingInvite",
+   "guid": "014D1CC3-BCFE-41FF-B2F0-E1EF07155828",
+   "provider": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameInviteRegisterForEvent",
+   "guid": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "provider": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameInviteRegisterForPendingEvent",
+   "guid": "014D1CC3-BCFE-41FF-B2F0-E1EF07155828",
+   "provider": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameInviteUnregisterForEvent",
+   "guid": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "provider": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameInviteUnregisterForPendingEvent",
+   "guid": "014D1CC3-BCFE-41FF-B2F0-E1EF07155828",
+   "provider": "0651AAE2-4012-4077-BF84-8B9097090E2C",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameProtocolRegisterForActivation",
+   "guid": "026B010C-06C3-4CDD-BBCB-43F229DB1CFF",
+   "provider": "95FD18D2-74DD-4D7C-AA1B-0B51827665D6",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameProtocolUnregisterForActivation",
+   "guid": "026B010C-06C3-4CDD-BBCB-43F229DB1CFF",
+   "provider": "95FD18D2-74DD-4D7C-AA1B-0B51827665D6",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameRuntimeIsFeatureAvailable",
+   "guid": "8836FE87-EDB9-4FE3-8DAD-05F0D2CD5B40",
+   "provider": "8836FE87-EDB9-4FE3-8DAD-05F0D2CD5B40",
+   "slot": 3,
+   "ret": "bool",
+   "params": "XGameRuntimeFeature feature",
+   "header": "XGameRuntimeFeature.h"
+  },
+  {
+   "name": "XGameSaveCloseContainer",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 17,
+   "ret": "void",
+   "params": "_In_ XGameSaveContainerHandle context",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveCloseProvider",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 6,
+   "ret": "void",
+   "params": "_In_ XGameSaveProviderHandle provider",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveCloseUpdate",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 24,
+   "ret": "void",
+   "params": "_In_ XGameSaveUpdateHandle context",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveCreateContainer",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_z_ const char* containerName, _Outptr_result_nullonfailure_ XGameSaveContainerHandle* containerContext",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveCreateUpdate",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 23,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveContainerHandle container, _In_z_ const char* containerDisplayName, _Outptr_result_nullonfailure_ XGameSaveUpdateHandle* updateContext",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveDeleteContainer",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_z_ const char* containerName",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveDeleteContainerAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_z_ const char* containerName, _In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveDeleteContainerResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveEnumerateBlobInfo",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveContainerHandle container, _In_opt_ void* context, _In_ XGameSaveBlobInfoCallback* callback",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveEnumerateBlobInfoByName",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveContainerHandle container, _In_opt_z_ const char* blobNamePrefix, _In_opt_ void* context, _In_ XGameSaveBlobInfoCallback* callback",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveEnumerateContainerInfo",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_opt_ void* context, _In_ XGameSaveContainerInfoCallback* callback",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveEnumerateContainerInfoByName",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_opt_z_ const char* containerNamePrefix, _In_opt_ void* context, _In_ XGameSaveContainerInfoCallback* callback",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveFilesGetFolderWithUiAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _In_z_ const char* configurationId, _In_ XAsyncBlock* async",
+   "header": "XGameSaveFiles.h"
+  },
+  {
+   "name": "XGameSaveFilesGetFolderWithUiResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 31,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ size_t folderSize, _Out_writes_bytes_(folderSize) char* folderResult",
+   "header": "XGameSaveFiles.h"
+  },
+  {
+   "name": "XGameSaveFilesGetRemainingQuota",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 32,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle userContext, _In_z_ const char* configurationId, _Out_ int64_t* remainingQuota",
+   "header": "XGameSaveFiles.h"
+  },
+  {
+   "name": "XGameSaveGetContainerInfo",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_z_ const char* containerName, _In_opt_ void* context, _In_ XGameSaveContainerInfoCallback* callback",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveGetRemainingQuota",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _Out_ int64_t* remainingQuota",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveGetRemainingQuotaAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveProviderHandle provider, _In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveGetRemainingQuotaResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ int64_t* remainingQuota",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveInitializeProvider",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _In_z_ const char* configurationId, _In_ bool syncOnDemand, _Outptr_result_nullonfailure_ XGameSaveProviderHandle* provider",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveInitializeProviderAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle requestingUser, _In_z_ const char* configurationId, _In_ bool syncOnDemand, _In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveInitializeProviderResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Outptr_result_nullonfailure_ XGameSaveProviderHandle* provider",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveReadBlobData",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveContainerHandle container, _In_opt_z_count_(*countOfBlobs) const char** blobNames, _Inout_ uint32_t* countOfBlobs, _In_ size_t blobsSize, _Out_writes_bytes_(blobsSize) XGameSaveBlob* blobData",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveReadBlobDataAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 21,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveContainerHandle container, _In_opt_z_count_(countOfBlobs) const char** blobNames, _In_ uint32_t countOfBlobs, _In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveReadBlobDataResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 22,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ size_t blobsSize, _Out_writes_bytes_(blobsSize) XGameSaveBlob* blobData, _Out_ uint32_t* countOfBlobs",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveSubmitBlobDelete",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 26,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveUpdateHandle updateContext, _In_z_ const char* blobName",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveSubmitBlobWrite",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveUpdateHandle updateContext, _In_z_ const char* blobName, _In_reads_bytes_(byteCount) const uint8_t* data, _In_ size_t byteCount",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveSubmitUpdate",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveUpdateHandle updateContext",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveSubmitUpdateAsync",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": "_In_ XGameSaveUpdateHandle updateContext, _In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameSaveSubmitUpdateResult",
+   "guid": "1BFFF3AF-F14A-40A3-8E35-9ADA906593F9",
+   "provider": "704C3F58-E629-4CC2-B197-30511B996FE2",
+   "slot": 29,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameSave.h"
+  },
+  {
+   "name": "XGameStreamingGetAssociatedFrame",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 23,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameStreamingGetClientCount",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 9,
+   "ret": "uint32_t",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetClientIPAddress",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 31,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameStreamingGetClients",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_ uint32_t clientCount, _Out_writes_to_(clientCount, *clientsUsed) XGameStreamingClientId* clients, _Out_ uint32_t* clientsUsed",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetConnectionState",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 11,
+   "ret": "XGameStreamingConnectionState",
+   "params": "_In_ XGameStreamingClientId client",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetDisplayDetails",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 33,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _In_ uint32_t maxSupportedPixels, _In_ float widestSupportedAspectRatio, _In_ float tallestSupportedAspectRatio, _Out_ XGameStreamingDisplayDetails* displayDetails",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetGamepadPhysicality",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 24,
+   "ret": "HRESULT",
+   "params": "_In_ IGameInputReading* gamepadReading, _Out_ XGameStreamingGamepadPhysicality* gamepadPhysicality",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetLastFrameDisplayed",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 22,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameStreamingGetServerLocationName",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ size_t serverLocationNameSize, _Out_writes_z_(serverLocationNameSize) char* serverLocationName",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetServerLocationNameSize",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 15,
+   "ret": "size_t",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetSessionId",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 32,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _In_ size_t sessionIdSize, _Out_writes_bytes_to_(sessionIdSize, *sessionIdUsed) char* sessionId, _Out_opt_ size_t* sessionIdUsed",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetStreamAddedLatency",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _Out_ uint32_t* averageInputLatencyUs, _Out_ uint32_t* averageOutputLatencyUs, _Out_ uint32_t* standardDeviationUs",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetStreamPhysicalDimensions",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _Out_ uint32_t* horizontalMm, _Out_ uint32_t* verticalMm",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetTouchBundleVersion",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _Out_opt_ XVersion* version, _In_ size_t versionNameSize, _Out_writes_opt_z_(versionNameSize) char* versionName",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingGetTouchBundleVersionNameSize",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 29,
+   "ret": "size_t",
+   "params": "_In_ XGameStreamingClientId client",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingHideTouchControls",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 17,
+   "ret": "void",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingHideTouchControlsOnClient",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 19,
+   "ret": "void",
+   "params": "_In_ XGameStreamingClientId client",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingInitialize",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingIsStreaming",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 5,
+   "ret": "bool",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingIsTouchInputEnabled",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 21,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _Out_ bool* touchInputEnabled",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingRegisterClientPropertiesChanged",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XGameStreamingClientPropertiesChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingRegisterConnectionStateChanged",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XGameStreamingConnectionStateChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingSendDebugMessageToClient",
+   "guid": "AEBDFE78-4394-49FF-BA3A-001956457044",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameStreamingSetResolution",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 34,
+   "ret": "HRESULT",
+   "params": "_In_ uint32_t width, _In_ uint32_t height",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingShowTouchControlLayout",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 18,
+   "ret": "void",
+   "params": "_In_opt_z_ const char* layout",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingShowTouchControlLayoutOnClient",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 20,
+   "ret": "void",
+   "params": "_In_ XGameStreamingClientId client, _In_opt_z_ const char* layout",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingShowTouchControlsWithStateUpdate",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_In_opt_z_ const char* layout, _In_ size_t operationCount, _In_reads_opt_(operationCount) const XGameStreamingTouchControlsStateOperation* operations",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingShowTouchControlsWithStateUpdateOnClient",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _In_opt_z_ const char* layout, _In_ size_t operationCount, _In_reads_opt_(operationCount) const XGameStreamingTouchControlsStateOperation* operations",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingUninitialize",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 4,
+   "ret": "void",
+   "params": "",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingUnregisterClientPropertiesChanged",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 7,
+   "ret": "bool",
+   "params": "_In_ XGameStreamingClientId client, _In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingUnregisterConnectionStateChanged",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 13,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, bool wait",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingUpdateTouchControlsState",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_In_ size_t operationCount, _In_reads_opt_(operationCount) const XGameStreamingTouchControlsStateOperation* operations",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameStreamingUpdateTouchControlsStateOnClient",
+   "guid": "57786622-6605-46D0-B917-0F22BBCD9C52",
+   "provider": "0A2192AA-B2D5-4D58-83BE-383B6D80799E",
+   "slot": 26,
+   "ret": "HRESULT",
+   "params": "_In_ XGameStreamingClientId client, _In_ size_t operationCount, _In_reads_opt_(operationCount) const XGameStreamingTouchControlsStateOperation* operations",
+   "header": "XGameStreaming.h"
+  },
+  {
+   "name": "XGameUiSetAchievementsUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 48,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetErrorDialogUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 50,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetMessageDialogUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 43,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle, _In_ XGameUiMessageDialogButton response",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetMultiplayerActivityGameInviteUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 49,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetNotificationPositionHint",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiNotificationPositionHint position",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetPlayerPickerUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 44,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle, _In_ uint32_t playerCount, _In_reads_opt_(playerCount) const uint64_t* players",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetPlayerProfileCardUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 46,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetSendGameInviteUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 47,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetTextEntryUiResponse",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 45,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiCallbackHandle callbackHandle, _In_z_ const char* response",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiSetUiCallbacks",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 42,
+   "ret": "HRESULT",
+   "params": "_In_ const XGameUiUiCallbacks* callbacks, _In_ bool useSystemUiIfAvailable",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowAchievementsAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_ uint32_t titleId",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowAchievementsResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock * async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowErrorDialogAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ HRESULT errorCode, _In_opt_z_ const char* context",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowErrorDialogResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowManageSpaceAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameUiShowManageSpaceResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 29,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XGameUiShowMessageDialogAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_z_ const char* titleText, _In_z_ const char* contentText, _In_opt_z_ const char* firstButtonText, _In_opt_z_ const char* secondButtonText, _In_opt_z_ const char* thirdButtonText, _In_ XGameUiMessageDialogButton defaultButton, _In_ XGameUiMessageDialogButton cancelButton",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowMessageDialogResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ XGameUiMessageDialogButton* resultButton",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowMultiplayerActivityGameInviteAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowMultiplayerActivityGameInviteResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 31,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowPlayerPickerAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_z_ const char* promptText, _In_ uint32_t selectFromPlayersCount, _In_reads_(selectFromPlayersCount) const uint64_t* selectFromPlayers, _In_ uint32_t preSelectedPlayersCount, _In_reads_opt_(preSelectedPlayersCount) const uint64_t* preSelectedPlayers, _In_ uint32_t minSelectionCount, _In_ uint32_t maxSelectionCount",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowPlayerPickerResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ uint32_t resultPlayersCount, _Out_writes_to_(resultPlayersCount, *resultPlayersUsed) uint64_t* resultPlayers, _Out_opt_ uint32_t* resultPlayersUsed",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowPlayerPickerResultCount",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* resultPlayersCount",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowPlayerProfileCardAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_ uint64_t targetPlayer",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowPlayerProfileCardResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowSendGameInviteAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_z_ const char* sessionConfigurationId, _In_z_ const char* sessionTemplateName, _In_z_ const char* sessionId, _In_opt_z_ const char* invitationText, _In_opt_z_ const char* customActivationContext",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowSendGameInviteResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowStateShareAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 40,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_z_ const char* linkToken",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowStateShareResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 41,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowTextEntryAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_opt_z_ const char* titleText, _In_opt_z_ const char* descriptionText, _In_opt_z_ const char* defaultText, _In_ XGameUiTextEntryInputScope inputScope, _In_ uint32_t maxTextLength",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowTextEntryResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ uint32_t resultTextBufferSize, _Out_writes_to_(resultTextBufferSize, *resultTextBufferUsed) char* resultTextBuffer, _Out_opt_ uint32_t* resultTextBufferUsed",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowTextEntryResultSize",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* resultTextBufferSize",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowWebAuthenticationAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 24,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_z_ const char* requestUri, _In_z_ const char* completionUri",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowWebAuthenticationResult",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 26,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t bufferSize, _Out_writes_bytes_to_(bufferSize, *bufferUsed) void* buffer, _Outptr_ XGameUiWebAuthenticationResultData** ptrToBuffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowWebAuthenticationResultSize",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ size_t* bufferSize",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiShowWebAuthenticationWithOptionsAsync",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _In_ XUserHandle requestingUser, _In_z_ const char* requestUri, _In_z_ const char* completionUri, _In_ XGameUiWebAuthenticationOptions options",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryClose",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 35,
+   "ret": "void",
+   "params": "_In_ XGameUiTextEntryHandle handle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryGetExtents",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 37,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiTextEntryHandle handle, _Out_ XGameUiTextEntryExtents* extents",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryGetState",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 36,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiTextEntryHandle handle, _Out_ XGameUiTextEntryChangeTypeFlags* changeType, _Out_opt_ uint32_t* cursorIndex, _Out_opt_ uint32_t* imeClauseStartIndex, _Out_opt_ uint32_t* imeClauseEndIndex, _In_ uint32_t bufferSize, _Out_writes_z_(bufferSize) char* buffer",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryOpen",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 34,
+   "ret": "HRESULT",
+   "params": "_In_ const XGameUiTextEntryOptions* options, _In_ uint32_t maxLength, _In_opt_z_ const char* initialText, _In_ uint32_t cursorIndex, _Out_ XGameUiTextEntryHandle* handle",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryUpdatePositionHint",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 38,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiTextEntryHandle handle, _In_ XGameUiTextEntryPositionHint positionHint",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XGameUiTextEntryUpdateVisibility",
+   "guid": "EAF669DF-5542-4590-99A3-8DC061F837CC",
+   "provider": "DFCD4649-4FF8-4043-BA07-35D607DF98B0",
+   "slot": 39,
+   "ret": "HRESULT",
+   "params": "_In_ XGameUiTextEntryHandle handle, _In_ XGameUiTextEntryVisibilityFlags visibilityFlags",
+   "header": "XGameUI.h"
+  },
+  {
+   "name": "XHighContrastGetMode",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_Out_ XHighContrastMode* mode",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XLaunchNewGame",
+   "guid": "2549F142-6419-4A06-97B5-931AAB7C2F34",
+   "provider": "973A344E-24BF-4D0F-8457-56C534892B29",
+   "slot": 4,
+   "ret": "void",
+   "params": "_In_z_ const char* exePath, _In_opt_z_ const char* args, _In_opt_ XUserHandle defaultUser",
+   "header": "XGame.h"
+  },
+  {
+   "name": "XLaunchRestartOnCrash",
+   "guid": "2549F142-6419-4A06-97B5-931AAB7C2F34",
+   "provider": "973A344E-24BF-4D0F-8457-56C534892B29",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_opt_z_ const char* args, _In_ uint32_t reserved",
+   "header": "XGame.h"
+  },
+  {
+   "name": "XLaunchUri",
+   "guid": "1B339674-328D-4283-A200-3171F18D3639",
+   "provider": "1B339674-328D-4283-A200-3171F18D3639",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XUserHandle requestingUser, _In_z_ const char* uri",
+   "header": "XLauncher.h"
+  },
+  {
+   "name": "XNetworkingGetConnectivityHint",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_Out_ XNetworkingConnectivityHint* connectivityHint",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQueryConfigurationSetting",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_ XNetworkingConfigurationSetting configurationSetting, _Out_ uint64_t* value",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQueryPreferredLocalUdpMultiplayerPort",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_Out_ uint16_t* preferredLocalUdpMultiplayerPort",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQueryPreferredLocalUdpMultiplayerPortAsync",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQueryPreferredLocalUdpMultiplayerPortAsyncResult",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _Out_ uint16_t* preferredLocalUdpMultiplayerPort",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlAsync",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* url, _Inout_ XAsyncBlock* asyncBlock",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlAsyncResult",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ size_t securityInformationBufferByteCount, _Out_opt_ size_t* securityInformationBufferByteCountUsed, _Out_writes_bytes_to_(securityInformationBufferByteCount, *securityInformationBufferByteCountUsed) uint8_t* securityInformationBuffer, _Outptr_ XNetworkingSecurityInformation** securityInformation",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlAsyncResultSize",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _Out_ size_t* securityInformationBufferByteCount",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlUtf16Async",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_z_ const wchar_t* url, _Inout_ XAsyncBlock* asyncBlock",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlUtf16AsyncResult",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _In_ size_t securityInformationBufferByteCount, _Out_opt_ size_t* securityInformationBufferByteCountUsed, _Out_writes_bytes_to_(securityInformationBufferByteCount, *securityInformationBufferByteCountUsed) uint8_t* securityInformationBuffer, _Outptr_ XNetworkingSecurityInformation** securityInformation",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQuerySecurityInformationForUrlUtf16AsyncResultSize",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _Out_ size_t* securityInformationBufferByteCount",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingQueryStatistics",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ XNetworkingStatisticsType statisticsType, _Out_ XNetworkingStatisticsBuffer* statisticsBuffer",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingRegisterConnectivityHintChanged",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XNetworkingConnectivityHintChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingRegisterPreferredLocalUdpMultiplayerPortChanged",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XNetworkingPreferredLocalUdpMultiplayerPortChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingSetConfigurationSetting",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ XNetworkingConfigurationSetting configurationSetting, _In_ uint64_t value",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingUnregisterConnectivityHintChanged",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 17,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingUnregisterPreferredLocalUdpMultiplayerPortChanged",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 7,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XNetworkingVerifyServerCertificate",
+   "guid": "BF2346B2-39AF-4658-B5EA-44713C7E83B3",
+   "provider": "37E56907-2F10-41E8-B72F-36EDB185331A",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ void* requestHandle, _In_ const XNetworkingSecurityInformation* securityInformation",
+   "header": "XNetworking.h"
+  },
+  {
+   "name": "XPackageChangeChunkInstallOrder",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_(selectorCount) XPackageChunkSelector* selectors",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageCloseInstallationMonitorHandle",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 6,
+   "ret": "void",
+   "params": "_In_ XPackageInstallationMonitorHandle installationMonitor",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageCloseMountHandle",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 26,
+   "ret": "void",
+   "params": "_In_ XPackageMountHandle mount",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageCreateInstallationMonitor",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_opt_(selectorCount) XPackageChunkSelector* selectors, _In_ uint32_t minimumUpdateIntervalMs, // 0 == no update _In_opt_ XTaskQueueHandle queue, _Out_ XPackageInstallationMonitorHandle* installationMonitor",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageEnumerateChunkAvailability",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ XPackageChunkSelectorType type, _In_ void* context, _In_ XPackageChunkAvailabilityCallback* callback",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageEnumerateFeatures",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 33,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_opt_ void* context, _In_ XPackageFeatureEnumerationCallback* callback",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageEnumeratePackages",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 39,
+   "ret": "HRESULT",
+   "params": "_In_ XPackageKind kind, _In_ XPackageEnumerationScope scope, _In_opt_ void* context, _In_ XPackageEnumerationCallback* callback",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageEstimateDownloadSize",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_(selectorCount) XPackageChunkSelector* selectors, _Out_ uint64_t* downloadSize, _Out_opt_ bool* shouldPresentUserConfirmation",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageFindChunkAvailability",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_opt_(selectorCount) XPackageChunkSelector* selectors, _Out_ XPackageChunkAvailability* availability",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetCurrentProcessPackageIdentifier",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ size_t bufferSize, _Out_writes_(bufferSize) char* buffer",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetIdentifier",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XPackageGetInstallationProgress",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 7,
+   "ret": "void",
+   "params": "_In_ XPackageInstallationMonitorHandle installationMonitor, _Out_ XPackageInstallationProgress* progress",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetMountPath",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_In_ XPackageMountHandle mount, _In_ size_t pathSize, _Out_writes_(pathSize) char* path",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetMountPathSize",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 24,
+   "ret": "HRESULT",
+   "params": "_In_ XPackageMountHandle mount, _Out_ size_t* pathSize",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetPackageKind",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 41,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _Out_ XPackageKind* kind",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetUserLocale",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ size_t localeSize, _Out_writes_(localeSize) char* locale",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageGetWriteStats",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_Out_ XPackageWriteStats* writeStats",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageInstallChunks",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_(selectorCount) XPackageChunkSelector* selectors, _In_ uint32_t minimumUpdateIntervalMs, _In_ bool suppressUserConfirmation, _In_opt_ XTaskQueueHandle queue, _Out_ XPackageInstallationMonitorHandle* installationMonitor",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageInstallChunksAsync",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_(selectorCount) XPackageChunkSelector* selectors, _In_ uint32_t minimumUpdateIntervalMs, _In_ bool suppressUserConfirmation, _Inout_ XAsyncBlock* asyncBlock",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageInstallChunksResult",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock, _Out_ XPackageInstallationMonitorHandle* installationMonitor",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageIsPackagedProcess",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 4,
+   "ret": "bool",
+   "params": "",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageMountWithUiAsync",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 37,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _Inout_ XAsyncBlock* async",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageMountWithUiResult",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 38,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XPackageMountHandle* mount",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageRegisterInstallationProgressChanged",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ XPackageInstallationMonitorHandle installationMonitor, _In_opt_ void* context, _In_ XPackageInstallationProgressCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageRegisterPackageInstalled",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 40,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XPackageInstalledCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUninstallChunks",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _In_ uint32_t selectorCount, _In_reads_(selectorCount) XPackageChunkSelector* selectors",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUninstallPackage",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 34,
+   "ret": "bool",
+   "params": "_In_z_ const char* packageIdentifier",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUninstallUWPInstance",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 32,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageName",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUnregisterInstallationProgressChanged",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 10,
+   "ret": "bool",
+   "params": "_In_ XPackageInstallationMonitorHandle installationMonitor, _In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUnregisterPackageInstalled",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 22,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPackageUpdateInstallationMonitor",
+   "guid": "0B9D556E-AB70-43F4-BAA0-9999AC4CB040",
+   "provider": "AF406016-E850-4AA8-A88D-2F3DCB9DAC7E",
+   "slot": 8,
+   "ret": "bool",
+   "params": "_In_ XPackageInstallationMonitorHandle installationMonitor",
+   "header": "XPackage.h"
+  },
+  {
+   "name": "XPersistentLocalStorageGetPath",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ size_t pathSize, _Out_writes_to_(pathSize, *pathUsed) char* path, _Out_opt_ size_t* pathUsed",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XPersistentLocalStorageGetPathSize",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_Out_ size_t* pathSize",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XPersistentLocalStorageGetSpaceInfo",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_Out_ XPersistentLocalStorageSpaceInfo* spaceInfo",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XPersistentLocalStorageMountForPackage",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* packageIdentifier, _Out_ XPackageMountHandle* mountHandle",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XPersistentLocalStoragePromptUserForSpaceAsync",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ uint64_t requestedBytes, _Inout_ XAsyncBlock* asyncBlock",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XPersistentLocalStoragePromptUserForSpaceResult",
+   "guid": "41A4E10C-5A7E-41D9-8C37-37BDE62A07D6",
+   "provider": "F4FAF4D4-2D04-4FCE-B3E0-474A713A3E84",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* asyncBlock",
+   "header": "XPersistentLocalStorage.h"
+  },
+  {
+   "name": "XSpeechSynthesizerCloseHandle",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XSpeechSynthesizerHandle speechSynthesizer",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerCloseStreamHandle",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerStreamHandle speechSynthesisStream",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerCreate",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_Out_ XSpeechSynthesizerHandle* speechSynthesizer",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerCreateStreamFromSsml",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 21,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerHandle speechSynthesizer, _In_z_ const char* ssml, _Out_ XSpeechSynthesizerStreamHandle* speechSynthesisStream",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerCreateStreamFromText",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerHandle speechSynthesizer, _In_z_ const char* text, _Out_ XSpeechSynthesizerStreamHandle* speechSynthesisStream",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerEnumerateInstalledVoices",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_In_opt_ void* context, _In_ XSpeechSynthesizerInstalledVoicesCallback* callback",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerGetStreamData",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerStreamHandle speechSynthesisStream, _In_ size_t bufferSize, _Out_writes_to_(bufferSize, *bufferUsed) void* buffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerGetStreamDataSize",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerStreamHandle speechSynthesisStream, _Out_ size_t* bufferSize",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerSetCustomVoice",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerHandle speechSynthesizer, _In_z_ const char* voiceId",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechSynthesizerSetDefaultVoice",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechSynthesizerHandle speechSynthesizer",
+   "header": "XSpeechSynthesizer.h"
+  },
+  {
+   "name": "XSpeechToTextBeginHypothesisString",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* speakerName, _In_z_ const char* content, _In_ XSpeechToTextType type, _Out_ uint32_t* hypothesisId",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XSpeechToTextCancelHypothesisString",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ uint32_t hypothesisId",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XSpeechToTextFinalizeHypothesisString",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ uint32_t hypothesisId, _In_z_ const char* content",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XSpeechToTextSendString",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* speakerName, _In_z_ const char* content, _In_ XSpeechToTextType type",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XSpeechToTextSetPositionHint",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ XSpeechToTextPositionHint position",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XSpeechToTextUpdateHypothesisString",
+   "guid": "D722B373-8C4D-4692-9E51-D6AD9B37AA7D",
+   "provider": "3E241977-6237-41E9-8559-102C2D9983F1",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_ uint32_t hypothesisId, _In_z_ const char* content",
+   "header": "XAccessibility.h"
+  },
+  {
+   "name": "XStoreAcquireLicenseForDurablesAsync",
+   "guid": "2D42FEA5-E71D-4B76-97CD-C50AFBB3AE5D",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 71,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreAcquireLicenseForDurablesResult",
+   "guid": "2D42FEA5-E71D-4B76-97CD-C50AFBB3AE5D",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 72,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreLicenseHandle* storeLicenseHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreAcquireLicenseForPackageAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* packageIdentifier, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreAcquireLicenseForPackageResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 21,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreLicenseHandle* storeLicenseHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCanAcquireLicenseForPackageAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 26,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* packageIdentifier, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCanAcquireLicenseForPackageResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreCanAcquireLicenseResult* storeCanAcquireLicense",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCanAcquireLicenseForStoreIdAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 24,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeProductId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCanAcquireLicenseForStoreIdResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreCanAcquireLicenseResult* storeCanAcquireLicense",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCloseContextHandle",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 4,
+   "ret": "void",
+   "params": "_In_ XStoreContextHandle storeContextHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCloseLicenseHandle",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 23,
+   "ret": "void",
+   "params": "_In_ XStoreLicenseHandle storeLicenseHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCloseProductsQueryHandle",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 19,
+   "ret": "void",
+   "params": "_In_ XStoreProductQueryHandle productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreCreateContext",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_opt_ const XUserHandle user, _Out_ XStoreContextHandle* storeContextHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadAndInstallPackageUpdatesAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 60,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_count_(packageIdentifiersCount) const char** packageIdentifiers, _In_ size_t packageIdentifiersCount, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadAndInstallPackageUpdatesResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 61,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadAndInstallPackagesAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 62,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_count_(storeIdsCount) const char** storeIds, _In_ size_t storeIdsCount, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadAndInstallPackagesResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 64,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ uint32_t count, _Out_writes_z_(count) char packageIdentifiers[][XPACKAGE_IDENTIFIER_MAX_LENGTH]",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadAndInstallPackagesResultCount",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 63,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* count",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadPackageUpdatesAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 58,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_count_(packageIdentifiersCount) const char** packageIdentifiers, _In_ size_t packageIdentifiersCount, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreDownloadPackageUpdatesResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 59,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreEnumerateProductsQuery",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreProductQueryHandle productQueryHandle, _In_opt_ void* context, _In_ XStoreProductQueryCallback* callback",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserCollectionsIdAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 37,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* serviceTicket, _In_z_ const char* publisherUserId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserCollectionsIdResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 39,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t size, _Out_writes_z_(size) char* result",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserCollectionsIdResultSize",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 38,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ size_t* size",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserPurchaseIdAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 40,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* serviceTicket, _In_z_ const char* publisherUserId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserPurchaseIdResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 42,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t size, _Out_writes_z_(size) char* result",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreGetUserPurchaseIdResultSize",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 41,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ size_t* size",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreIsAvailabilityPurchasable",
+   "guid": "60B09F4E-1B85-45B1-826C-169118E230E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 70,
+   "ret": "bool",
+   "params": "_In_ const XStoreAvailability availability",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreIsLicenseValid",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 22,
+   "ret": "bool",
+   "params": "_In_ const XStoreLicenseHandle storeLicenseHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreProductsQueryHasMorePages",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 16,
+   "ret": "bool",
+   "params": "_In_ const XStoreProductQueryHandle productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreProductsQueryNextPageAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreProductQueryHandle productQueryHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreProductsQueryNextPageResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAddOnLicensesAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAddOnLicensesResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 32,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ uint32_t count, _Out_writes_(count) XStoreAddonLicense* addOnLicenses",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAddOnLicensesResultCount",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 31,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* count",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAssociatedProductsAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_ XStoreProductKind productKinds, _In_ uint32_t maxItemsToRetrievePerPage, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAssociatedProductsForStoreIdAsync",
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 77,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeProductId, _In_ XStoreProductKind productKinds, _In_ uint32_t maxItemsToRetrievePerPage, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAssociatedProductsForStoreIdResult",
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 78,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryAssociatedProductsResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryConsumableBalanceRemainingAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 33,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeProductId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryConsumableBalanceRemainingResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 34,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreConsumableResult* consumableResult",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryEntitledProductsAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_ XStoreProductKind productKinds, _In_ uint32_t maxItemsToRetrievePerPage, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryEntitledProductsResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryGameAndDlcPackageUpdatesAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 55,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryGameAndDlcPackageUpdatesResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 57,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ uint32_t count, _Out_writes_(count) XStorePackageUpdate* packageUpdates",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryGameAndDlcPackageUpdatesResultCount",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 56,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* count",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryGameLicenseAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryGameLicenseResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 29,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreGameLicense* license",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryLicenseTokenAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 43,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_count_(productIdsCount) const char** productIds, _In_ size_t productIdsCount, _In_z_ const char* customDeveloperString, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryLicenseTokenResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 45,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t size, _Out_writes_z_(size) char* result",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryLicenseTokenResultSize",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 44,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ size_t* size",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryPackageIdentifier",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 65,
+   "ret": "HRESULT",
+   "params": "_In_z_ const char* storeId, _In_ size_t size, _Out_writes_z_(size) char* packageIdentifier",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryPackageUpdatesAsync",
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 79,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_ const char** packageIdentifiers, _In_ size_t packageIdentifiersCount, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryPackageUpdatesResult",
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 81,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ uint32_t count, _Out_writes_(count) XStorePackageUpdate* packageUpdates",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryPackageUpdatesResultCount",
+   "guid": "5C48DEDF-0B67-4492-A4B5-6829B8E796E1",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 80,
+   "ret": "HRESULT",
+   "params": "_In_ XAsyncBlock* async, _Out_ uint32_t* count",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductForCurrentGameAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductForCurrentGameResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductForPackageAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_ XStoreProductKind productKinds, _In_z_ const char* packageIdentifier, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductForPackageResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductsAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_ XStoreProductKind productKinds, _In_z_count_(storeIdsCount) const char** storeIds, _In_ size_t storeIdsCount, _In_opt_z_count_(actionFiltersCount) const char** actionFilters, _In_ size_t actionFiltersCount, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreQueryProductsResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreProductQueryHandle* productQueryHandle",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreRegisterGameLicenseChanged",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 66,
+   "ret": "HRESULT",
+   "params": "_In_ XStoreContextHandle storeContextHandle, _In_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XStoreGameLicenseChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreRegisterPackageLicenseLost",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 68,
+   "ret": "HRESULT",
+   "params": "_In_ XStoreLicenseHandle licenseHandle, _In_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XStorePackageLicenseLostCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreReportConsumableFulfillmentAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 35,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeProductId, _In_ uint32_t quantity, _In_ GUID trackingId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreReportConsumableFulfillmentResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 36,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreConsumableResult* consumableResult",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowAssociatedProductsUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 73,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeId, _In_ XStoreProductKind productKinds, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowAssociatedProductsUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 74,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowGiftingUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 82,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeId, _In_opt_z_ const char* name, _In_opt_z_ const char* extendedJsonData, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowGiftingUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 83,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowProductPageUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 75,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeId, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowProductPageUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 76,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowPurchaseUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 49,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* storeId, _In_opt_z_ const char* name, _In_opt_z_ const char* extendedJsonData, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowPurchaseUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 50,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowRateAndReviewUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 51,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowRateAndReviewUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 52,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XStoreRateAndReviewResult* result",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowRedeemTokenUIAsync",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 53,
+   "ret": "HRESULT",
+   "params": "_In_ const XStoreContextHandle storeContextHandle, _In_z_ const char* token, _In_z_count_(allowedStoreIdsCount) const char** allowedStoreIds, _In_ size_t allowedStoreIdsCount, _In_ bool disallowCsvRedemption, _Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreShowRedeemTokenUIResult",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 54,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreUnregisterGameLicenseChanged",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 67,
+   "ret": "bool",
+   "params": "_In_ XStoreContextHandle storeContextHandle, _In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XStoreUnregisterPackageLicenseLost",
+   "guid": "B09D803C-2414-4A05-82C6-66DFDC9E9A44",
+   "provider": "0DD112AC-7C24-448C-B92B-3960FB5BD30C",
+   "slot": 69,
+   "ret": "bool",
+   "params": "_In_ XStoreLicenseHandle licenseHandle, _In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XStore.h"
+  },
+  {
+   "name": "XSystemAllowFullDownloadBandwidth",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 8,
+   "ret": "void",
+   "params": "_In_ bool enable",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemGetAnalyticsInfo",
+   "guid": "B884675D-B738-4A9C-815D-9A9A1E0C6C9B",
+   "provider": "B884675D-B738-4A9C-815D-9A9A1E0C6C9B",
+   "slot": 3,
+   "ret": "XSystemAnalyticsInfo",
+   "params": "",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemGetAppSpecificDeviceId",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 5,
+   "ret": "HRESULT",
+   "params": "_In_ size_t appSpecificDeviceIdSize, _Out_writes_bytes_to_(appSpecificDeviceIdSize, *appSpecificDeviceIdUsed) char* appSpecificDeviceId, _Out_opt_ size_t* appSpecificDeviceIdUsed",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemGetConsoleId",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ size_t consoleIdSize, _Out_writes_bytes_to_(consoleIdSize, *consoleIdUsed) char* consoleId, _Out_opt_ size_t* consoleIdUsed",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemGetXboxLiveSandboxId",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_ size_t sandboxIdSize, _Out_writes_bytes_to_(sandboxIdSize, *sandboxIdUsed) char* sandboxId, _Out_opt_ size_t* sandboxIdUsed",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemHandleTrack",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_In_ XSystemHandleCallback callback, _In_opt_ void* context",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XSystemIsHandleValid",
+   "guid": "1861CF2E-E18B-4834-A9F5-B4A4E6EFB4CF",
+   "provider": "E349BD1A-FC20-4E40-B99C-4178CC6B409F",
+   "slot": 7,
+   "ret": "bool",
+   "params": "_In_ XSystemHandle handle",
+   "header": "XSystem.h"
+  },
+  {
+   "name": "XTaskQueueCloseHandle",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 17,
+   "ret": "void",
+   "params": "_In_ XTaskQueueHandle queue",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueCreate",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueDispatchMode workDispatchMode, _In_ XTaskQueueDispatchMode completionDispatchMode, _Out_ XTaskQueueHandle* queue",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueCreateComposite",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueuePortHandle workPort, _In_ XTaskQueuePortHandle completionPort, _Out_ XTaskQueueHandle* queue",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueDispatch",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 16,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueuePort port, _In_ uint32_t timeoutInMs",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueDuplicateHandle",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 15,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queueHandle, _Out_ XTaskQueueHandle* duplicatedHandle",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueGetCurrentProcessTaskQueue",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 25,
+   "ret": "bool",
+   "params": "_Out_ XTaskQueueHandle* queue",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueGetPort",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueuePort port, _Out_ XTaskQueuePortHandle* portHandle",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueRegisterMonitor",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 23,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_opt_ void* callbackContext, _In_ XTaskQueueMonitorCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueRegisterWaiter",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueuePort port, _In_ HANDLE waitHandle, _In_opt_ void* callbackContext, _In_ XTaskQueueCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueSetCurrentProcessTaskQueue",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 26,
+   "ret": "void",
+   "params": "_In_ XTaskQueueHandle queue",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueSubmitCallback",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueuePort port, _In_opt_ void* callbackContext, _In_ XTaskQueueCallback* callback",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueSubmitDelayedCallback",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueuePort port, _In_ uint32_t delayMs, _In_opt_ void* callbackContext, _In_ XTaskQueueCallback* callback",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueTerminate",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 22,
+   "ret": "HRESULT",
+   "params": "_In_ XTaskQueueHandle queue, _In_ bool wait, _In_opt_ void* callbackContext, _In_opt_ XTaskQueueTerminatedCallback* callback",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueUnregisterMonitor",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 24,
+   "ret": "void",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueueRegistrationToken token",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XTaskQueueUnregisterWaiter",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 21,
+   "ret": "void",
+   "params": "_In_ XTaskQueueHandle queue, _In_ XTaskQueueRegistrationToken token",
+   "header": "XTaskQueue.h"
+  },
+  {
+   "name": "XThreadAssertNotTimeSensitive",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 29,
+   "ret": "void",
+   "params": "",
+   "header": "XThread.h"
+  },
+  {
+   "name": "XThreadIsTimeSensitive",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 30,
+   "ret": "bool",
+   "params": "",
+   "header": "XThread.h"
+  },
+  {
+   "name": "XThreadSetTimeSensitive",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_In_ bool isTimeSensitiveThread",
+   "header": "XThread.h"
+  },
+  {
+   "name": "XThreadVerifyNotTimeSensitive",
+   "guid": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "provider": "073B7DCB-1FCF-4030-94BE-E3C9EB623428",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": null,
+   "header": null
+  },
+  {
+   "name": "XUserAddAsync",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_ XUserAddOptions options, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserAddByIdWithUiAsync",
+   "guid": "EB9BF948-18DC-4D82-BBCC-40E0A809C4C0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 37,
+   "ret": "HRESULT",
+   "params": "_In_ uint64_t userId, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserAddByIdWithUiResult",
+   "guid": "EB9BF948-18DC-4D82-BBCC-40E0A809C4C0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 38,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XUserHandle* newUser",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserAddResult",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 8,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ XUserHandle* newUser",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserCheckPrivilege",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 20,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserPrivilegeOptions options, _In_ XUserPrivilege privilege, _Out_ bool* hasPrivilege, _Out_opt_ XUserPrivilegeDenyReason* reason",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserCloseHandle",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 4,
+   "ret": "void",
+   "params": "_In_ XUserHandle user",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserCloseSignOutDeferralHandle",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 36,
+   "ret": "void",
+   "params": "_In_ XUserSignOutDeferralHandle deferral",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserCompare",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 5,
+   "ret": "int32_t",
+   "params": "_In_opt_ XUserHandle user1, _In_opt_ XUserHandle user2",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserDuplicateHandle",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle handle, _Out_ XUserHandle* duplicatedHandle",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserFindControllerForUserWithUiAsync",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserFindControllerForUserWithUiResult",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ APP_LOCAL_DEVICE_ID* deviceId",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserFindForDevice",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ const APP_LOCAL_DEVICE_ID* deviceId, _Out_ XUserHandle* handle",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserFindUserById",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 12,
+   "ret": "HRESULT",
+   "params": "_In_ uint64_t userId, _Out_ XUserHandle* handle",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserFindUserByLocalId",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 10,
+   "ret": "HRESULT",
+   "params": "_In_ XUserLocalId userLocalId, _Out_ XUserHandle* handle",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetAgeGroup",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 19,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Out_ XUserAgeGroup* ageGroup",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetDefaultAudioEndpointUtf16",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "XUserLocalId user, XUserDefaultAudioEndpointKind defaultAudioEndpointKind, size_t endpointIdUtf16Count, _Out_writes_to_(endpointIdUtf16Count, *endpointIdUtf16Used) wchar_t* endpointIdUtf16, _Out_opt_ size_t* endpointIdUtf16Used",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetGamerPictureAsync",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 16,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserGamerPictureSize pictureSize, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetGamerPictureResult",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 18,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t bufferSize, _Out_writes_bytes_to_(bufferSize, *bufferUsed) void* buffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetGamerPictureResultSize",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 17,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ size_t* bufferSize",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetGamertag",
+   "guid": "CEF4FAC0-7676-4A94-A119-4C43F9EB5B74",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 3,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserGamertagComponent gamertagComponent, _In_ size_t gamertagSize, _Out_writes_bytes_to_(gamertagSize, *gamertagUsed) char* gamertag, _Out_opt_ size_t* gamertagUsed",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetId",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 11,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Out_ uint64_t* userId",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetIsGuest",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 13,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Out_ bool* isGuest",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetLocalId",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 9,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Out_ XUserLocalId* userLocalId",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetMaxUsers",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 6,
+   "ret": "HRESULT",
+   "params": "_Out_ uint32_t* maxUsers",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetSignOutDeferral",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 35,
+   "ret": "HRESULT",
+   "params": "_Out_ XUserSignOutDeferralHandle* deferral",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetState",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 14,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Out_ XUserState* state",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureAsync",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 23,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserGetTokenAndSignatureOptions options, _In_z_ const char* method, _In_z_ const char* url, _In_ size_t headerCount, _In_reads_opt_(headerCount) const XUserGetTokenAndSignatureHttpHeader* headers, _In_ size_t bodySize, _In_reads_bytes_opt_(bodySize) const void* bodyBuffer, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureResult",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 25,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t bufferSize, _Out_writes_bytes_to_(bufferSize, *bufferUsed) void* buffer, _Outptr_ XUserGetTokenAndSignatureData** ptrToBuffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureResultSize",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 24,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ size_t* bufferSize",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureUtf16Async",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 26,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserGetTokenAndSignatureOptions options, _In_z_ const wchar_t* method, _In_z_ const wchar_t* url, _In_ size_t headerCount, _In_reads_opt_(headerCount) const XUserGetTokenAndSignatureUtf16HttpHeader* headers, _In_ size_t bodySize, _In_reads_bytes_opt_(bodySize) const void* bodyBuffer, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureUtf16Result",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 28,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _In_ size_t bufferSize, _Out_writes_bytes_to_(bufferSize, *bufferUsed) void* buffer, _Outptr_ XUserGetTokenAndSignatureUtf16Data** ptrToBuffer, _Out_opt_ size_t* bufferUsed",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserGetTokenAndSignatureUtf16ResultSize",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 27,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async, _Out_ size_t* bufferSize",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserIsSignOutPresent",
+   "guid": "5131D685-4394-4EE6-8C18-BFB5D4AEF1FF",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 47,
+   "ret": "bool",
+   "params": "",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserIsStoreUser",
+   "guid": "079415E3-6727-437F-8E9D-8F8F9B2439F7",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 42,
+   "ret": "bool",
+   "params": "_In_ XUserHandle user",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserPlatformRemoteConnectCancelPrompt",
+   "guid": "26F3C674-A2FE-44FA-B6C4-A323BC94FF53",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 44,
+   "ret": "HRESULT",
+   "params": "_In_ XUserPlatformOperation operation",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserPlatformRemoteConnectSetEventHandlers",
+   "guid": "26F3C674-A2FE-44FA-B6C4-A323BC94FF53",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 43,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_ XUserPlatformRemoteConnectEventHandlers* handlers",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserPlatformSpopPromptComplete",
+   "guid": "26F3C674-A2FE-44FA-B6C4-A323BC94FF53",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 46,
+   "ret": "HRESULT",
+   "params": "_In_ XUserPlatformOperation operation, _In_ XUserPlatformSpopOperationResult result",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserPlatformSpopPromptSetEventHandlers",
+   "guid": "26F3C674-A2FE-44FA-B6C4-A323BC94FF53",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 45,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_ XUserPlatformSpopPromptEventHandler* handler, _In_opt_ void* context",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserRegisterForChangeEvent",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 33,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XUserChangeEventCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserRegisterForDefaultAudioEndpointUtf16Changed",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 7,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XUserDefaultAudioEndpointUtf16ChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserRegisterForDeviceAssociationChanged",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 4,
+   "ret": "HRESULT",
+   "params": "_In_opt_ XTaskQueueHandle queue, _In_opt_ void* context, _In_ XUserDeviceAssociationChangedCallback* callback, _Out_ XTaskQueueRegistrationToken* token",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolveIssueWithUiAsync",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 29,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_opt_z_ const char* url, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolveIssueWithUiResult",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 30,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolveIssueWithUiUtf16Async",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 31,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_opt_z_ const wchar_t* url, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolveIssueWithUiUtf16Result",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 32,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolvePrivilegeWithUiAsync",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 21,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _In_ XUserPrivilegeOptions options, _In_ XUserPrivilege privilege, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserResolvePrivilegeWithUiResult",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 22,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserSignOutAsync",
+   "guid": "5131D685-4394-4EE6-8C18-BFB5D4AEF1FF",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 48,
+   "ret": "HRESULT",
+   "params": "_In_ XUserHandle user, _Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserSignOutResult",
+   "guid": "5131D685-4394-4EE6-8C18-BFB5D4AEF1FF",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 49,
+   "ret": "HRESULT",
+   "params": "_Inout_ XAsyncBlock* async",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserUnregisterForChangeEvent",
+   "guid": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "provider": "01ACD177-91F9-4763-A38E-CCBB55CE32E0",
+   "slot": 34,
+   "ret": "bool",
+   "params": "_In_ XTaskQueueRegistrationToken token, _In_ bool wait",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserUnregisterForDefaultAudioEndpointUtf16Changed",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 8,
+   "ret": "bool",
+   "params": "XTaskQueueRegistrationToken token, bool wait",
+   "header": "XUser.h"
+  },
+  {
+   "name": "XUserUnregisterForDeviceAssociationChanged",
+   "guid": "0CC6A956-E7E1-4FDF-9341-9D5DA649EBC8",
+   "provider": "7D824997-10DC-45AB-86B7-2737767C0BF1",
+   "slot": 5,
+   "ret": "bool",
+   "params": "XTaskQueueRegistrationToken token, bool wait",
+   "header": "XUser.h"
+  }
+ ]
+}
