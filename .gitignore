@@ -18,6 +18,7 @@ AppxManifest.xml
 docs/
 *.md
 *.markdown
+!/README.md
 
 # Secrets / credentials / personal config
 .env
